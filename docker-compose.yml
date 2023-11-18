@@ -1,7 +1,7 @@
 version: "3.2"
 services:
   php-dynamic-qrcode:
-    image: "giandonatoinverso/php-dynamic-qr-code:latest"
+    image: "gcisolutions/php-dynamic-qr-code:latest"
     restart: "unless-stopped"
     environment:
       TYPE: "docker"
@@ -23,7 +23,7 @@ services:
       - php-dynamic-qrcode-network
 
   php-dynamic-qrcode-db:
-    image: "giandonatoinverso/php-dynamic-qr-code-db:latest"
+    image: "gcisolutions/php-dynamic-qr-code-db:latest"
     restart: "unless-stopped"
     volumes:
       - php_dynamic_qrcode_db_data:/var/lib/mysql
