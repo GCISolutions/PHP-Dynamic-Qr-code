@@ -5,7 +5,7 @@ services:
     restart: "unless-stopped"
     environment:
       TYPE: "docker"
-      BASE_URL: "https://mydomain.com"
+      BASE_URL: "https://52.152.217.195"
       DATABASE_HOST: "php-dynamic-qrcode-db"
       DATABASE_PORT: "3306"
       DATABASE_NAME: "qrcode"
